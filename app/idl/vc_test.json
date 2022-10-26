@@ -1,0 +1,47 @@
+{
+  "version": "0.1.0",
+  "name": "vc_test",
+  "instructions": [
+    {
+      "name": "verify",
+      "accounts": [
+        {
+          "name": "didProgram",
+          "isMut": false,
+          "isSigner": false
+        },
+        {
+          "name": "did",
+          "isMut": false,
+          "isSigner": false
+        },
+        {
+          "name": "authority",
+          "isMut": true,
+          "isSigner": true
+        },
+        {
+          "name": "systemProgram",
+          "isMut": false,
+          "isSigner": false
+        }
+      ],
+      "args": [
+        {
+          "name": "didAccountBump",
+          "type": "u8"
+        }
+      ]
+    }
+  ],
+  "errors": [
+    {
+      "code": 6000,
+      "name": "KeyMustBeSigner",
+      "msg": "Signer is not authorised to sign for this Creator account"
+    }
+  ],
+  "metadata": {
+    "address": "Fmubx1pA65pgiZdqNyGkrN1EwxfmkUpUdeXqouKteP8p"
+  }
+}

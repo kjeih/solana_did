@@ -1,0 +1,48 @@
+{
+  "name": "app",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "format": "prettier --ignore-path .gitignore \"**/*.+(ts|js|tsx)\" --write"
+  },
+  "dependencies": {
+    "@emotion/react": "^11.10.4",
+    "@emotion/styled": "^11.10.4",
+    "@identity.com/sol-did-client": "^3.1.0",
+    "@mui/material": "^5.10.11",
+    "@project-serum/anchor": "^0.25.0",
+    "@solana/spl-token": "^0.3.5",
+    "@solana/wallet-adapter-base": "^0.9.3",
+    "@solana/wallet-adapter-react": "^0.15.3",
+    "@solana/wallet-adapter-react-ui": "^0.9.11",
+    "@solana/wallet-adapter-wallets": "^0.16.8",
+    "@solana/web3.js": "^1.66.2",
+    "autoprefixer": "^10.4.12",
+    "next": "12.3.1",
+    "notistack": "^2.0.8",
+    "postcss": "^8.4.18",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "tailwind-merge": "^1.7.0",
+    "tailwindcss": "^3.2.1",
+    "react-spinners": "^0.13.4"
+  },
+  "devDependencies": {
+    "@types/node": "16.11.17",
+    "@types/react": "18.0.22",
+    "@types/react-dom": "18.0.7",
+    "@typescript-eslint/eslint-plugin": "^5.31.0",
+    "@typescript-eslint/parser": "^5.31.0",
+    "eslint": "8.26.0",
+    "eslint-config-next": "12.3.1",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-import-resolver-typescript": "^3.3.0",
+    "eslint-plugin-prettier": "^4.2.1",
+    "prettier": "^2.7.1",
+    "typescript": "4.8.4"
+  }
+}

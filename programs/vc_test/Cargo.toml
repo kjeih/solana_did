@@ -1,0 +1,23 @@
+[package]
+name = "vc_test"
+version = "0.1.0"
+description = "Created with Anchor"
+edition = "2021"
+
+[lib]
+crate-type = ["cdylib", "lib"]
+name = "vc_test"
+
+[features]
+no-entrypoint = []
+no-idl = []
+no-log-ix-name = []
+cpi = ["no-entrypoint"]
+default = []
+
+[profile.release]
+overflow-checks = true
+
+[dependencies]
+anchor-lang = "0.25.0"
+sol-did = { git = "https://github.com/identity-com/sol-did", tag = "3.1.4", features = ["no-entrypoint"] }
